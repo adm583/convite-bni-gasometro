@@ -1,0 +1,25 @@
+# Windows / Drive metadata
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Claude Code local config
+.claude/
+
+# Foto antiga nao referenciada pelo HTML (a usada eh mariana.webp)
+MarianaOliveira.jpg
+
+# Logo variants antigas (usamos apenas logo.png)
+logo-mais-presença-v2023*.png
+
+# Imagem não referenciada no HTML
+Gasômetro.png
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Node / Vercel (caso venha a usar build tools depois)
+node_modules/
+.vercel
