@@ -782,6 +782,27 @@
   .logo-link{ display: inline-flex; line-height: 0; text-decoration: none; transition: opacity 0.2s ease; }
   .logo-link:hover{ opacity: 0.75; }
 
+  /* ---------- WIDTH CONSISTENCY ---------- */
+  /* Seções sem wrapper interno precisam do mesmo max-width das outras */
+  .topbar,
+  .hero,
+  .final{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-grid,
+  .footer-bottom{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rule{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /* Meta corner */
   .corner-meta{
     position: fixed;
