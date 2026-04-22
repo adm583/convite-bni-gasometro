@@ -623,13 +623,14 @@
     color: #2a2d0a;
     margin-top: 16px;
   }
-  .cta-date .addr{
+  .cta-card .addr{
     display: block;
     font-size: clamp(16px, 1.4vw, 20px);
     line-height: 1.35;
     color: #1a1d05;
     margin-top: 8px;
     max-width: 32ch;
+    grid-column: 1 / -1;
   }
 
   .cta-button{
@@ -779,6 +780,9 @@
     transition: color 0.2s ease, text-decoration-color 0.2s ease;
   }
   .brand-link:hover{ color: var(--lime); text-decoration-color: var(--lime); }
+  /* Variante pra quando o brand-link cai em fundo lime (cta-card) */
+  .cta-card .brand-link{ text-decoration-color: rgba(10, 10, 10, 0.4); }
+  .cta-card .brand-link:hover{ color: var(--ink); text-decoration-color: var(--ink); }
 
   /* Logo links (reset anchor defaults) */
   .logo-link{ display: inline-flex; line-height: 0; text-decoration: none; transition: opacity 0.2s ease; }
@@ -852,7 +856,7 @@
   <div>
     <div class="hero-meta reveal d1">
       <span class="dot"></span>
-      <span>Palestra BNI Gasômetro · 24.04</span>
+      <span>Palestra <a class="brand-link" href="https://www.instagram.com/bnigasometro/" target="_blank" rel="noopener">BNI</a> Gasômetro · 24.04</span>
     </div>
 
     <h1>
@@ -1002,17 +1006,17 @@
     <div class="bni-grid">
       <article class="bni-card io-hidden">
         <div class="bni-card-tag">para membros</div>
-        <h4 class="bni-card-title">Se você já é do BNI</h4>
+        <h4 class="bni-card-title">Se você já é do <a class="brand-link" href="https://www.instagram.com/bnigasometro/" target="_blank" rel="noopener">BNI</a></h4>
         <p class="bni-card-body">
-          É a oportunidade perfeita pra apresentar alguém ao BNI com um tema que todo empresário deve se preocupar: <strong>estar perdendo cliente sem saber</strong>.
+          É a oportunidade perfeita pra apresentar alguém ao <a class="brand-link" href="https://www.instagram.com/bnigasometro/" target="_blank" rel="noopener">BNI</a> com um tema que todo empresário deve se preocupar: <strong>estar perdendo cliente sem saber</strong>.
         </p>
       </article>
 
       <article class="bni-card io-hidden">
         <div class="bni-card-tag accent">para visitantes</div>
-        <h4 class="bni-card-title">Se você ainda não é do BNI</h4>
+        <h4 class="bni-card-title">Se você ainda não é do <a class="brand-link" href="https://www.instagram.com/bnigasometro/" target="_blank" rel="noopener">BNI</a></h4>
         <p class="bni-card-body">
-          O BNI é uma rede global de networking empresarial. Empresários de diferentes setores se reúnem toda semana pra gerar negócios entre si. Essa é a oportunidade perfeita de <strong>ver como funciona</strong>, sem compromisso, com café, networking e uma palestra que rende semanas de prospecção.
+          O <a class="brand-link" href="https://www.instagram.com/bnigasometro/" target="_blank" rel="noopener">BNI</a> é uma rede global de networking empresarial. Empresários de diferentes setores se reúnem toda semana pra gerar negócios entre si. Essa é a oportunidade perfeita de <strong>ver como funciona</strong>, sem compromisso, com café, networking e uma palestra que rende semanas de prospecção.
         </p>
       </article>
     </div>
@@ -1032,8 +1036,8 @@
     <a class="cta-date" href="https://app.leadteam.com.br/evento/convidados-gasometro-24-abril" target="_blank" rel="noopener">
       <span class="big">24<em>/</em>04</span>
       <span class="sub">Sexta · 07h às 09h</span>
-      <span class="addr">BNI Gasômetro · Av. Ipiranga, 1555 · 5º andar · Porto Alegre</span>
     </a>
+    <span class="addr"><a class="brand-link" href="https://www.instagram.com/bnigasometro/" target="_blank" rel="noopener">BNI</a> Gasômetro · Av. Ipiranga, 1555 · 5º andar · Porto Alegre</span>
     <a class="cta-button" href="https://app.leadteam.com.br/evento/convidados-gasometro-24-abril" target="_blank" rel="noopener">
       Garantir minha participação
       <span class="arrow" aria-hidden="true"></span>
