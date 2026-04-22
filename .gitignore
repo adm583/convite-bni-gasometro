@@ -6,9 +6,6 @@ Thumbs.db
 # Claude Code local config
 .claude/
 
-# Foto antiga nao referenciada pelo HTML (a usada eh mariana.webp)
-MarianaOliveira.jpg
-
 # Logo variants antigas (usamos apenas logo.png)
 logo-mais-presença-v2023*.png
 
